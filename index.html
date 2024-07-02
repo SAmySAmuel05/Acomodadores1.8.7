@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditorio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="darkModeToggle">Modo Nocturno</button>
+        <h1>Asientos Arena CDMX</h1>
+        <h2>Mapa General para Acomodadores</h2>
+    </header>
+    <main>
+        <section id="zones" aria-label="Zonas del Auditorio">
+            <button id="showZonesButton">Mostrar zonas</button>
+            <span id="selectedZoneText"></span>
+            <div id="zonesMenu" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Selecciona una zona</h2>
+                    <div class="zone-buttons-container">
+                        <button class="zone-button" data-zone="A">Zona 3 A-B</button>
+                        <button class="zone-button" data-zone="B">Zona 3 B-C</button>
+                        <button class="zone-button" data-zone="C">Zona 3 C-D</button>
+                        <button class="zone-button" data-zone="D">Zona 3 D-E</button>
+                        <button class="zone-button" data-zone="E">Zona 3 E-F</button>
+                        <button class="zone-button" data-zone="F">Zona 3 F-G</button>
+                        <button class="zone-button" data-zone="G">Zona 3 G-H</button>
+                        <button class="zone-button" data-zone="H">Zona 3 H-I</button>
+                        <button class="zone-button" data-zone="I">Zona 3 I-J</button>
+                        <button class="zone-button" data-zone="J">Zona 3 J-K</button>
+                        <button class="zone-button" data-zone="K">Zona 3 K-L</button>
+                        <button class="zone-button" data-zone="L">Zona 3 L-M</button>
+                        <button class="zone-button" data-zone="M">Zona 3 M-N</button>
+                        <button class="zone-button" data-zone="N">Zona 3 N-O</button>
+                        <button class="zone-button" data-zone="O">Zona 3 O-P</button>
+                        <button class="zone-button" data-zone="P">Zona 3 P-Q</button>
+                        <button class="zone-button" data-zone="Q">Zona 3 Q-R</button>
+                        <button class="zone-button" data-zone="R">Zona 3 R-S</button>
+                        <button class="zone-button" data-zone="S">Zona 3 S-T</button>
+                        <button class="zone-button" data-zone="T">Zona 3 T-U</button>
+                        <button class="zone-button" data-zone="U">Zona 3 U-V</button>
+                        <button class="zone-button" data-zone="V">Zona 3 V-W</button>
+                        <button class="zone-button" data-zone="W">Zona 3 W-X</button>
+                        <button class="zone-button" data-zone="X">Zona 3 X-Y</button>
+                        <button class="zone-button" data-zone="Y">Zona 3 Y-Z</button>
+                        <button class="zone-button" data-zone="Z">Zona 3 Z-A</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="auditorium" aria-label="Asientos del Auditorio"></section>
+      <button id="toggleSpecialButton" class="small-button">Seleccionar Necesidades Especiales</button></h2>
+        <section id="summary" aria-label="Resumen">
+            <p id="zoneSummary"></p>
+            <p id="overallSummary"></p>
+        </section>
+        <section id="passwordSection">
+            <label for="passwordInput">Contraseña:</label>
+            <input type="password" id="passwordInput">
+            <button id="submitPasswordButton">Enviar</button>
+            <p id="errorMessage">Contraseña incorrecta. Inténtalo de nuevo.</p>
+        </section>
+        <div id="buttonContainer">
+            <button id="resetButton" disabled>Resetear Asientos</button>
+            <button id="overallSummaryButton" disabled>Asistencia General</button>
+            <button id="removeSeatsButton" disabled>Eliminar Asientos</button>
+            <button id="restoreSeatsButton" disabled>Restaurar Asientos</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
